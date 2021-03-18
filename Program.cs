@@ -6,22 +6,22 @@ namespace SF4._4
     {
         static void Main(string[] args)
         {
-            var (name, age) = ("Евгения", 276);
+            (string name, string type, double age, int namecount) pet;
 
-            Console.WriteLine("Имя: {0}", name);
-            Console.WriteLine("Возраст: {0}", age);
-
-            Console.WriteLine("");
-
-            Console.Write("Введите новое имя: ");
-            name = Console.ReadLine();
-            Console.Write("Введите новый возраст цифрами: ");
-            age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите имя зверя: ");
+            pet.name = Console.ReadLine();
+            Console.Write("Введите вид зверя: ");
+            pet.type = Console.ReadLine();
+            Console.Write("Введите возраст зверя цифрами: ");
+            pet.age = Convert.ToInt32(Console.ReadLine());
+            pet.namecount = pet.name.Length;
 
             Console.WriteLine("");
 
-            Console.WriteLine("Новое имя: {0}", name);
-            Console.WriteLine("Возраст: {0}", age);
+            Console.WriteLine("Имя Зверя: {0}", pet.name);
+            Console.WriteLine("Вид Зверя: {0}", pet.type);
+            Console.WriteLine("Возраст Зверя: {0}", pet.age);
+            Console.WriteLine("Длина имени Зверя: {0}", pet.namecount);
 
         }
     }
