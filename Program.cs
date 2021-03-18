@@ -8,13 +8,17 @@ namespace SF4._4
         {
             var (name, age) = ("Евгения", 276);
 
-            Console.Write("Имя: {0}", name);
-            Console.Write("Возраст: {0}", age);
+            Console.WriteLine("Имя: {0}", name);
+            Console.WriteLine("Возраст: {0}", age);
+
+            Console.WriteLine("");
 
             Console.Write("Введите новое имя: ");
             name = Console.ReadLine();
             Console.Write("Введите новый возраст цифрами: ");
             age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("");
 
             Console.WriteLine("Новое имя: {0}", name);
             Console.WriteLine("Возраст: {0}", age);
